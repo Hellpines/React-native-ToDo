@@ -48,7 +48,7 @@ export default function Search() {
                         <Text style={style.text1}>{el.title}</Text>
                     </View>
                     <TouchableOpacity>...</TouchableOpacity>
-                </View> : <View style={{ flexDirection: 'row', alignItems: 'center', padding: 16, backgroundColor: '#F5F7F9', borderRadius: 16, justifyContent: 'space-between' }}>
+                </View> : <View style={{ flexDirection: 'row', width: '100%', alignItems: 'center', padding: 16, backgroundColor: '#F5F7F9', borderRadius: 16, justifyContent: 'space-between', marginTop: 20, gap: 20 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 16 }}>
                         <TouchableOpacity onPress={async () => {
                             const flags = arr.map(elem => {
@@ -79,5 +79,5 @@ export default function Search() {
 }
 
 const style = StyleSheet.create({
-    text1: { fontFamily: 'SpaceMono', fontSize: 16, fontWeight: 600, color: '#3F3D56' },
+    text1: { fontFamily: 'UrbanistMedium', fontSize: 16, fontWeight: 600, color: '#3F3D56' },
 })
